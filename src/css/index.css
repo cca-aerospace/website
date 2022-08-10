@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&display=swap");
+:root {
+  --bg: #001220;
+  --cherry: #ff0040;
+  --marigold: #eca72c;
+  --crimson: #8b0216;
+  --chalk: #f1e0c5;
+}
+
+body {
+  background-color: var(--bg);
+  color: #ffffff;
+  font-family: "Epilogue";
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 0.125rem;
+  transition: background-size 0.3s;
+}
+
+a:hover,
+a:focus {
+  background-size: 100% 0.125rem;
+}
+
+p {
+  line-height: 1.61803;
+}
+
+.button-primary {
+  background-color: var(--cherry);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 900;
+  width: 100%;
+  box-shadow: 0.25rem 0.25rem 1rem var(--crimson);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  background-color: var(--crimson);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #0012208a;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  padding: 0 1rem;
+  display: inline-block;
+}
+
+.navbar li > a {
+  color: #ffffff;
+  transition: color 0.3s, background-size 0.3s;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.navbar li > a:hover {
+  color: var(--chalk);
+}
+
+.navbar li.active > a {
+  pointer-events: none;
+  color: var(--marigold);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.navbar li.nav-logo {
+  padding-right: 1.5rem;
+  height: 1.5rem;
+  border-right: var(--chalk) solid 0.125rem;
+}
+
+.navbar li.nav-logo > a {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--chalk);
+}
+
+.navbar li.nav-logo:hover > a {
+  color: var(--cherry);
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto;
+  max-width: 64rem;
+}
+
+.section div {
+  margin: 0 1.5rem;
+  flex: 50%;
+}
+
+.section div img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
