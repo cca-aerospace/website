@@ -33,7 +33,6 @@
 
 .hero {
   min-height: 100vh;
-  background-color: #000910;
 }
 
 .hero-waves {
@@ -68,7 +67,7 @@
 .hero-base {
   opacity: 0;
   width: 100%;
-  min-height: 14rem;
+  min-height: 18rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -100,7 +99,7 @@
 }
 
 @media (max-width: 992px) {
-  .hero-base {
-    height: 25%;
+  .hero-heading {
+    font-size: 3rem;
   }
 }

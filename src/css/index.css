@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&display=swap");
+
 :root {
   --bg: #001220;
   --cherry: #ff0040;
@@ -29,7 +30,7 @@ a:focus {
   background-size: 100% 0.125rem;
 }
 
-p {
+p.text {
   line-height: 1.61803;
 }
 
@@ -39,9 +40,9 @@ p {
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
-  font-weight: 900;
+  font-size: 1.25rem;
+  font-weight: 700;
   width: 100%;
-  box-shadow: 0.25rem 0.25rem 1rem var(--crimson);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -129,8 +130,6 @@ p {
   margin-top: 0;
   font-size: 2.5rem;
 }
-
-
 
 @media (max-width: 992px) {
   .section {

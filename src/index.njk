@@ -8,7 +8,7 @@ eleventyNavigation:
 <html>
 
   <head>
-    <link href="/css/index.css" rel="stylesheet">
+    {% include "meta.njk" %}
     <link href="/css/home.css" rel="stylesheet">
     <script src="/js/rellax.min.js" defer></script>
     <title>CCA Aerospace</title>
@@ -30,11 +30,13 @@ eleventyNavigation:
     <section class="section">
       <div>
         <h2>Who We Are</h2>
-        <p>We are CCA Aerospace, a diverse group of young and talented individuals filled with a passion to discover what is out there in the vast expanse of space. United in our love for STEM and fueled by a desire to explore our world and universe, we undertake challenges through our projects in an attempt to reshape and redefine what is thought to be possible for high school students to achieve.</p>
+        <p class="text">We are CCA Aerospace, a diverse group of young and talented individuals filled with a passion to discover what is out there in the vast expanse of space. United in our love for STEM and fueled by a desire to explore our world and universe, we undertake challenges through our projects in an attempt to reshape and redefine what is thought to be possible for high school students to achieve.</p>
       </div>
       <div>
-        <img src="http://placekitten.com/400/200" />
-        <a href="/about-us"><button class="button-primary">LEARN MORE</button></a>
+        <img src="http://placekitten.com/400/200"/>
+        <a href="/about-us">
+          <button class="button-primary">Learn More</button>
+        </a>
       </div>
     </section>
   </body>
