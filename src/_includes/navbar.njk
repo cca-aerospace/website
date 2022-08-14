@@ -13,12 +13,16 @@
             {%- endif -%}
         </li>
     {%- endmacro %}
+    <input type="checkbox" id="menu-toggle">
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+
+    <div class="nav-logo">
+        <a href="/">CCA Aerospace</a>
+    </div>
 
     <ul>
-        <li class="nav-logo">
-            <a href="/">CCA Aerospace</a>
-        </li>
-        <span class="nav-separator"></span>
         {%- for entry in navPages %}{{ renderNavListItem(entry) }}
         {%- endfor -%}
     </ul>

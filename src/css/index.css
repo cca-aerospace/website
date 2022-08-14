@@ -61,6 +61,10 @@ p.text {
   padding: 1.5rem;
 }
 
+.navbar * {
+  display: inline-block;
+}
+
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -69,7 +73,6 @@ p.text {
 
 .navbar ul li {
   padding: 0 1rem;
-  display: inline-block;
 }
 
 .navbar li > a {
@@ -92,20 +95,70 @@ p.text {
   font-size: 1.25rem;
 }
 
-.navbar li.nav-logo {
+.navbar .nav-logo {
+  padding: 0 1rem;
   padding-right: 1.5rem;
   height: 1.5rem;
   border-right: var(--chalk) solid 0.125rem;
 }
 
-.navbar li.nav-logo > a {
+.navbar .nav-logo > a {
   font-weight: 900;
   font-size: 1.5rem;
+  transition: color 0.3s, background-size 0.3s;
   color: var(--chalk);
 }
 
-.navbar li.nav-logo:hover > a {
+.navbar .nav-logo:hover > a {
   color: var(--cherry);
+}
+
+.navbar #menu-toggle {
+  display: none;
+}
+
+.navbar .menu-button-container {
+  color: #ffffff;
+  transition: color 0.3s;
+  position: relative;
+  display: none;
+  height: 1.5rem; /* 100% doesn't work for some reason and i don't want to fix it rn */
+  width: 2rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .menu-button-container:hover {
+  color: var(--chalk);
+}
+
+.navbar #menu-toggle:checked ~ .menu-button-container {
+  color: var(--marigold);
+}
+
+.menu-button-container .menu-button,
+.menu-button-container .menu-button::before,
+.menu-button-container .menu-button::after {
+  display: block;
+  background-color: currentColor;
+  position: absolute;
+  height: 0.25rem;
+  width: 2rem;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 0.15rem;
+}
+
+.menu-button-container .menu-button::before {
+  content: "";
+  margin-top: -0.5rem;
+}
+
+.menu-button-container .menu-button::after {
+  content: "";
+  margin-top: 0.5rem;
 }
 
 .section {
@@ -134,5 +187,43 @@ p.text {
 @media (max-width: 992px) {
   .section {
     flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar .nav-logo {
+    padding: 0 1rem;
+    padding-right: 1.5rem;
+    height: 1.5rem;
+    border-left: var(--chalk) solid 0.125rem;
+    border-right: none;
+  }
+
+  .navbar .menu-button-container {
+    display: flex;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar #menu-toggle:checked ~ ul {
+    position: fixed;
+    padding-top: 6rem;
+    min-width: 16rem;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #001220da;
+    height: 100%;
+    z-index: -5;
+  }
+  .navbar #menu-toggle:checked ~ ul li {
+    padding: 1rem 1.5rem;
   }
 }
