@@ -67,6 +67,12 @@
   font-size: 5rem;
 }
 
+@media (max-width: 992px) {
+  .hero .header-heading {
+    font-size: 4rem;
+  }
+}
+
 .cover-the-wonky-animations-shhhh {
   position: relative;
   z-index: 10;
