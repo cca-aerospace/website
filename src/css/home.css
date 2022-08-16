@@ -32,19 +32,12 @@
 }
 
 .hero {
+  position: relative;
   min-height: 100vh;
 }
 
-.hero-waves {
-  position: relative;
-  background-image: url("/img/layered-waves.svg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+.hero .header-waves {
   min-height: 100vh;
-  bottom: 0;
-  z-index: 4;
   animation: slide-up-waves 500ms;
 }
 
@@ -59,35 +52,19 @@
 }
 
 .hero-rocket {
-  width: 3.75rem;
-  height: 6.797rem;
+  width: 71px;
+  height: 151.111111111px;
   transform: translate(-50%, -25%);
 }
 
-.hero-base {
+.hero .header-base {
   opacity: 0;
-  width: 100%;
-  min-height: 18rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  /* Using Background images probably isn't the best practice just sayin */
   animation: slide-up-base 500ms 300ms;
   animation-fill-mode: forwards;
-  background-image: url("/img/hero-cover.svg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.hero-heading {
-  font-weight: 900;
+.hero .header-heading {
   font-size: 5rem;
-  transform: translateY(1rem) scaleX(1.2);
 }
 
 .cover-the-wonky-animations-shhhh {
@@ -96,10 +73,4 @@
   width: 100%;
   height: 25vh;
   background-color: var(--bg);
-}
-
-@media (max-width: 992px) {
-  .hero-heading {
-    font-size: 3rem;
-  }
 }

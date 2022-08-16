@@ -190,6 +190,7 @@ p.text {
   }
 
   .navbar {
+    min-height: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -225,5 +226,53 @@ p.text {
   }
   .navbar #menu-toggle:checked ~ ul li {
     padding: 1rem 1.5rem;
+  }
+}
+
+
+.header {
+  /* height + margin (t + b) */
+  margin-top: calc(1.5rem + 1.5rem * 2);
+  position: relative;
+  min-height: 60vh;
+}
+
+.header-waves {
+  position: relative;
+  background-image: url("/img/layered-waves.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 60vh;
+  bottom: 0;
+  z-index: 4;
+}
+
+.header-base {
+  width: 100%;
+  min-height: 18rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  background-image: url("/img/hero-cover.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-heading {
+  font-weight: 900;
+  font-size: 4rem;
+  transform: translateY(1rem) scaleX(1.1);
+}
+
+@media (max-width: 992px) {
+  .header-heading {
+    font-size: 3rem;
   }
 }
