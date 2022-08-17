@@ -1,0 +1,14 @@
+.stars-background {
+  margin: 0;
+  padding: 2rem 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/stars.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.stars-background .heading {
+    margin-bottom: 2.5rem;
+}

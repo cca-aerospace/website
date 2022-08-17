@@ -63,12 +63,12 @@
   animation-fill-mode: forwards;
 }
 
-.hero .header-heading {
+.hero .heading {
   font-size: 5rem;
 }
 
 @media (max-width: 992px) {
-  .hero .header-heading {
+  .hero .heading {
     font-size: 4rem;
   }
 }

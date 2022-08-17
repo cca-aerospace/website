@@ -9,6 +9,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--bg);
   color: #ffffff;
   font-family: "Epilogue";
@@ -163,9 +164,20 @@ p.text {
 
 .section {
   display: flex;
-  flex-direction: row;
   margin: 3rem auto;
+}
+
+.section.two-col {
+  flex-direction: row;
   max-width: 64rem;
+}
+
+.section.spotlight {
+  flex-direction: column;
+  max-width: 64rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .section div {
@@ -180,7 +192,7 @@ p.text {
 }
 
 .section h2 {
-  margin-top: 0;
+  margin: 0;
   font-size: 2.5rem;
 }
 
@@ -229,7 +241,6 @@ p.text {
   }
 }
 
-
 .header {
   /* height + margin (t + b) */
   margin-top: calc(1.5rem + 1.5rem * 2);
@@ -265,14 +276,16 @@ p.text {
   background-size: cover;
 }
 
-.header-heading {
+.heading {
+  margin: 0;
+  text-align: center;
   font-weight: 900;
   font-size: 4rem;
   transform: translateY(1rem) scaleX(1.1);
 }
 
 @media (max-width: 992px) {
-  .header-heading {
+  .heading {
     font-size: 3rem;
   }
 }
