@@ -204,6 +204,10 @@ p.text {
     flex-direction: column;
   }
 
+  .section.two-col {
+    flex-direction: column;
+  }
+
   .navbar {
     min-height: 1.5rem;
     display: flex;
@@ -290,5 +294,9 @@ p.text {
 @media (max-width: 992px) {
   .heading {
     font-size: 3rem;
+  }
+
+  .header-base {
+    min-height: 9rem;
   }
 }

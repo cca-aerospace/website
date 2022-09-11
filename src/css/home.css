@@ -61,6 +61,7 @@
   opacity: 0;
   animation: slide-up-base 500ms 300ms;
   animation-fill-mode: forwards;
+  min-height: 18rem;
 }
 
 .hero .heading {
