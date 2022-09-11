@@ -172,6 +172,10 @@ p.text {
   max-width: 64rem;
 }
 
+.section.two-col div {
+  flex: 50%;
+}
+
 .section.spotlight {
   flex-direction: column;
   max-width: 64rem;
@@ -182,7 +186,6 @@ p.text {
 
 .section div {
   margin: 0 1.5rem;
-  flex: 50%;
 }
 
 .section div img {

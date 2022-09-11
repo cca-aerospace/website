@@ -1,14 +1,35 @@
-.stars-background {
-  margin: 0;
-  padding: 2rem 0;
-  width: 100% !important;
-  max-width: 100% !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/img/stars.png");
-  background-size: cover;
-  background-attachment: fixed;
+.section.who-we-are {
+  max-width: 90% !important;
 }
 
-.stars-background .heading {
-    margin-bottom: 2.5rem;
+.people {
+  margin: 2.5rem 0 0 0 !important;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.person {
+  display: inline-block;
+  flex: 25%;
+}
+
+.person h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.person h4 {
+  margin-top: 0.5rem;
+  color: var(--chalk);
+}
+
+
+.person img {
+  border-radius: 100% !important;
+  height: 10rem;
+  width: 10rem !important;
 }
