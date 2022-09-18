@@ -31,6 +31,10 @@ a:focus {
   background-size: 100% 0.125rem;
 }
 
+a::has(button) {
+  background-size: 0% 0 !important;
+}
+
 p.text {
   line-height: 1.61803;
 }
@@ -110,8 +114,26 @@ p.text {
   color: var(--chalk);
 }
 
-.navbar .nav-logo:hover > a {
+.navbar .nav-logo a:hover {
   color: var(--cherry);
+}
+
+.navbar .join-us {
+  float: right;
+  position:absolute;
+  /* These are basically magic numbers, css is so finicy */
+  top: 1rem;
+  right: calc(3rem + 0.75rem + 1rem);
+  height: 1.5rem;
+}
+
+.navbar .join-us a {
+  background-size: 0% 0;
+}
+
+.navbar .join-us a .button-primary {
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
 }
 
 .navbar #menu-toggle {
