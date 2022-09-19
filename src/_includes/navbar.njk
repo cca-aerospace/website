@@ -25,9 +25,19 @@
     <ul>
         {%- for entry in navPages %}{{ renderNavListItem(entry) }}
         {%- endfor -%}
+
+        <li class="join-us-hamburger">
+            <a href="/join">
+                <button class="button-primary">Join Us</button>
+            </a>
+        </li>
     </ul>
 
+
+    <!-- Just a heads up to future me, you should refactor this to be seperate list to handle all the buttons on the right and consolidate all the bad css into some simpler css--> 
     <div class="join-us">
-        <a href="/join"><button class="button-primary">Join Us</button></a>
+        <a href="/join">
+            <button class="button-primary">Join Us</button>
+        </a>
     </div>
 </nav>

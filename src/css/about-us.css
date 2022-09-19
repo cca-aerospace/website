@@ -38,16 +38,12 @@
     flex-direction: column;
   }
 
-  .person h3 {
-    font-size: 3rem;
-  }
-
-  .person h4 {
-    font-size: 1.5rem;
+  .person {
+    margin: 1rem 0 !important;
   }
 
   .person img {
-    height: 16rem;
-    width: 16rem !important;
+    height: 8rem;
+    width: 8rem !important;
   }
 }

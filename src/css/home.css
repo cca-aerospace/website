@@ -81,3 +81,9 @@
   height: 25vh;
   background-color: var(--bg);
 }
+
+.about-us-image {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  overflow: hidden;
+}

@@ -77,7 +77,7 @@ p.text {
 }
 
 .navbar ul li {
-  padding: 0 1rem;
+  margin: 0 1rem;
 }
 
 .navbar li > a {
@@ -118,20 +118,25 @@ p.text {
   color: var(--cherry);
 }
 
+.navbar ul .join-us-hamburger {
+  display: none;
+}
+
 .navbar .join-us {
-  float: right;
-  position:absolute;
+  position: absolute;
   /* These are basically magic numbers, css is so finicy */
   top: 1rem;
   right: calc(3rem + 0.75rem + 1rem);
   height: 1.5rem;
 }
 
-.navbar .join-us a {
+.navbar .join-us a,
+.navbar ul .join-us-hamburger a {
   background-size: 0% 0;
 }
 
-.navbar .join-us a .button-primary {
+.navbar .join-us a .button-primary,
+.navbar ul .join-us-hamburger a .button-primary {
   padding: 0.5rem 1.5rem;
   font-weight: 700;
 }
@@ -230,6 +235,10 @@ p.text {
     flex-direction: column;
   }
 
+  .section.spotlight {
+    margin: 0 2rem;
+  }
+
   .navbar {
     min-height: 1.5rem;
     display: flex;
@@ -253,6 +262,20 @@ p.text {
     display: none;
   }
 
+  .navbar ul .join-us-hamburger {
+    display: inline-block;
+    margin-top: auto !important;
+    margin-bottom: calc(6rem + 1rem) !important;
+  }
+
+  .navbar ul .join-us-hamburger a {
+    width: 100%;
+  }
+
+  .navbar .join-us {
+    display: none;
+  }
+
   .navbar #menu-toggle:checked ~ ul {
     position: fixed;
     padding-top: 6rem;
@@ -265,8 +288,9 @@ p.text {
     height: 100%;
     z-index: -5;
   }
+
   .navbar #menu-toggle:checked ~ ul li {
-    padding: 1rem 1.5rem;
+    margin: 1rem 1.5rem;
   }
 }
 
