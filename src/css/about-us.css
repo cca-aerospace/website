@@ -33,7 +33,7 @@
   width: 10rem !important;
 }
   
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .people {
     flex-direction: column;
   }
