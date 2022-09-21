@@ -22,22 +22,22 @@
         <a href="/">CCA Aerospace</a>
     </div>
 
-    <ul>
-        {%- for entry in navPages %}{{ renderNavListItem(entry) }}
-        {%- endfor -%}
+    <div class="main-nav">
+        <div class="left">
+            <ul>
+                {%- for entry in navPages %}{{ renderNavListItem(entry) }}
+                {%- endfor -%}
+            </ul>
+        </div>
 
-        <li class="join-us-hamburger">
-            <a href="/join">
-                <button class="button-primary">Join Us</button>
-            </a>
-        </li>
-    </ul>
-
-
-    <!-- Just a heads up to future me, you should refactor this to be seperate list to handle all the buttons on the right and consolidate all the bad css into some simpler css--> 
-    <div class="join-us">
-        <a href="/join">
-            <button class="button-primary">Join Us</button>
-        </a>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="/join">
+                        <button class="button-primary">Join Us</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
