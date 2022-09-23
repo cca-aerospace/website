@@ -274,8 +274,20 @@ p.text {
     display: flex;
   }
 
+  /* note to future self: there should be paddings on the left and right side of the nav main */
   .navbar .main-nav {
     display: none;
+  }
+
+  .navbar .right ul {
+    flex-direction: column;
+  }
+
+  .navbar .socials-container {
+    border-left: none;
+    /* i hate css. */
+    margin-top: 0;
+    padding-left: 0;
   }
 
   .navbar #menu-toggle:checked ~ .main-nav {
