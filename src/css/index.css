@@ -132,6 +132,33 @@ p.text {
   font-weight: 700;
 }
 
+/* yet another hacky solution */
+.navbar .right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .socials-container {
+  margin-left: 0;
+  padding-left: 0.75rem;
+  border-left: var(--chalk) solid 0.125rem;
+}
+
+.navbar .socials .social {
+  background-size: 0% 0 !important;
+  margin: 0 0.5rem;
+  display: inline-block;
+  fill: white;
+  transition: 300ms;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.navbar .socials .social:hover {
+  fill: var(--chalk);
+}
+
 .navbar #menu-toggle {
   display: none;
 }
@@ -273,7 +300,6 @@ p.text {
     display: block;
     margin: 1rem 1.5rem;
   }
-
 }
 
 .header {
