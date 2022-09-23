@@ -1,3 +1,11 @@
+body {
+  overflow-x: scroll !important;
+}
+@media (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+}
 .join-text {
-    max-width: calc(40rem * 1.15);
+  max-width: calc(40rem * 1.15);
 }
