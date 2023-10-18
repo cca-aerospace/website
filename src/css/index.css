@@ -3,6 +3,8 @@
 :root {
   --bg: #001220;
   --cherry: #ff0040;
+  --vampire: #fa7268;
+  --blood: #ef5f67;
   --marigold: #eca72c;
   --crimson: #8b0216;
   --chalk: #f1e0c5;
@@ -56,6 +58,24 @@ p.text {
 .button-primary:hover {
   background-color: var(--crimson);
 }
+
+.button-secondary {
+  background-color: var(--vampire);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: var(--blood);
+}
+
 
 .navbar {
   position: fixed;
@@ -127,7 +147,8 @@ p.text {
   justify-content: space-between;
 }
 
-.navbar .button-primary {
+.navbar .button-primary,
+.navbar .button-secondary {
   padding: 0.5rem 1.5rem;
   font-weight: 700;
 }
@@ -137,6 +158,10 @@ p.text {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.navbar .button-group {
+  gap: 0.5rem;
 }
 
 .navbar .socials-container {
